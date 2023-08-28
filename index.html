@@ -77,7 +77,7 @@
 					},
 					init() {
 						let url = window.location.href.split("key=");
-						if (url.length < 1) {
+						if (url.length <= 1) {
 							this.$alert('当前链接没有KEY无法获取数据！请到Q群（805589781）获取链接。', '提示', {
 								confirmButtonText: '确定',
 								callback: action => {
